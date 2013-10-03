@@ -7,7 +7,10 @@ public class Strings {
 	
 	//Item Names
 	public static final String SPARKLING_VIAL_NAME = "sparklingVial";
+	public static final String BURNER_RING_NAME = "burnerRing";
+	public static final String IRON_LASER_NAME = "ironLaser";
 	
 	//Block Names
-	public static final String OBSIDIAN_TABLE_NAME = "obsidianTable";
+	public static final String BURNER_PLATE_NAME = "burnerPlate";
+	public static final String ENGINEERING_LASER_NAME = "engineeringLaser";
 }

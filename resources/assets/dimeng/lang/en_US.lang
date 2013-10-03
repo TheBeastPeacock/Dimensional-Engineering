@@ -2,9 +2,12 @@
 
 # Item localizations
 item.dimeng:sparklingVial.name=Sparkling Vial
+item.dimeng:burnerRing.name=Burner Ring
+item.dimeng:ironLaser.name=Iron Laser
 
 # Block localizations
-tile.dimeng:obsidianTable.name=Obsidian Table
+tile.dimeng:burnerPlate.name=Burner Plate
+tile.dimeng:engineeringLaser.name=Engineering Laser
 
 # GUI localizations
 

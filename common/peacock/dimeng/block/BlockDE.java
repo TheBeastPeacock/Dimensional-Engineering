@@ -12,13 +12,14 @@ public abstract class BlockDE extends BlockContainer {
 	protected BlockDE(int id, Material material) {
 		
 		super(id, material);
+		
 	}
 	
 	@Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
-
-        blockIcon = iconRegister.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+    public void registerIcons(IconRegister par1iconRegister) {
+		
+        blockIcon = par1iconRegister.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName) {

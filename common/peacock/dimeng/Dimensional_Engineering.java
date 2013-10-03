@@ -33,23 +33,25 @@ public class Dimensional_Engineering {
     
     @EventHandler // used in 1.6.2
     public void preInit(FMLPreInitializationEvent event) {
-            // Stub Method
+    	
+    	//initializes items
+        ModItems.init();
+        
+        //initializes blocks
+        ModBlocks.init();
     	
     }
     
     @EventHandler // used in 1.6.2
     public void load(FMLInitializationEvent event) {
-    	//registers Renderers
-    	proxy.registerRenderers();
+    	//registers Tile Entities
+    	proxy.registerTileEntities();
+    	
+    	//initializes textures and item renderer
+    	proxy.initRenderingAndTextures();
     	
     	//registers test crafting handler
         GameRegistry.registerCraftingHandler(new CraftingHandler());
-        
-        //initializes items
-        ModItems.init();
-        
-        //initializes blocks
-        ModBlocks.init();
     }
     
     @EventHandler // used in 1.6.2

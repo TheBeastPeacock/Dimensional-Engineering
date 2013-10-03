@@ -2,6 +2,10 @@ package peacock.dimeng.lib;
 
 public class BlockIds {
 	
-	public static int OBISDIAN_TABLE = 3741;
+	/*Block Id Shifter*/
+	private final static int SHIFT = 3750;
+	/*Block Ids*/
+	public static int BURNER_PLATE = 1 + SHIFT;
+	public static int ENGINEERING_LASER = 2 + SHIFT;
 
 }

@@ -8,13 +8,16 @@ import peacock.dimeng.lib.Strings;
 public class ModBlocks {
 	
 	/*Block Instances*/
-	public static Block obisdianTable;
+	public static Block burnerPlate;
+	public static Block engineeringLaser;
 	
 	public static void init() {
 		/*Assigning Blocks*/
-		obisdianTable = new BlockObsidianTable(BlockIds.OBISDIAN_TABLE);
+		burnerPlate = new BlockBurnerPlate(BlockIds.BURNER_PLATE);
+		engineeringLaser = new BlockEngineeringLaser(BlockIds.ENGINEERING_LASER);
 		/*Registering Blocks*/
-		GameRegistry.registerBlock(obisdianTable, Strings.OBSIDIAN_TABLE_NAME);
+		GameRegistry.registerBlock(burnerPlate, Strings.BURNER_PLATE_NAME);
+		GameRegistry.registerBlock(engineeringLaser, Strings.ENGINEERING_LASER_NAME);
 		/*Recipes Initialization*/
 		initBlockRecipes();
 	}
